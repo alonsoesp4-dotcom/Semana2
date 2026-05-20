@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Algoritmos Unidad 3</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- MENÚ -->
+<div id="menu" class="pantalla">
+
+    <h1>⚜ Algoritmos Unidad 3</h1>
+    <p>Selecciona un problema</p>
+
+    <div class="grid">
+
+        <div class="card" onclick="abrir('p31')">3.1 Votar</div>
+        <div class="card" onclick="abrir('p32')">3.2 Sueldo</div>
+        <div class="card" onclick="abrir('p33')">3.3 Regalo</div>
+        <div class="card" onclick="abrir('p34')">3.4 Estacionamiento</div>
+        <div class="card" onclick="abrir('p35')">3.5 Menor edad</div>
+        <div class="card" onclick="abrir('p36')">3.6 Descuento</div>
+        <div class="card" onclick="abrir('p37')">3.7 Becas</div>
+        <div class="card" onclick="abrir('p38')">3.8 Bono</div>
+        <div class="card" onclick="abrir('p39')">3.9 Seguro</div>
+        <div class="card" onclick="abrir('p310')">3.10 Vacaciones</div>
+        <div class="card" onclick="abrir('p311')">3.11 Bono tienda</div>
+        <div class="card" onclick="abrir('p312')">3.12 Sueldo extra</div>
+        <div class="card" onclick="abrir('p313')">3.13 Viaje alumnos</div>
+
+    </div>
+
+</div>
+
+<!-- ================= PROBLEMAS ================= -->
+
+<div id="p31" class="pantalla oculto">
+<div class="topbar"><h2>⚜ 3.1 Votar</h2></div>
+<div class="panelBox">
+<p>Ingresa tu edad</p>
+<input id="edad">
+<button onclick="p31()">Calcular</button>
+<div id="r31" class="resultado"></div>
+<button class="back" onclick="volver()">← Volver</button>
+</div>
+</div>
+
+<div id="p32" class="pantalla oculto">
+<div class="topbar"><h2>⚜ 3.2 Sueldo semanal</h2></div>
+<div class="panelBox">
+<input id="h32" placeholder="Horas">
+<input id="p32v" placeholder="Pago por hora">
+<button onclick="p32()">Calcular</button>
+<div id="r32" class="resultado"></div>
+<button class="back" onclick="volver()">← Volver</button>
+</div>
+</div>
+
+<div id="p33" class="pantalla oculto">
+<div class="topbar"><h2>⚜ 3.3 Regalo</h2></div>
+<div class="panelBox">
+<input id="d33" placeholder="Dinero">
+<button onclick="p33()">Ver</button>
+<div id="r33" class="resultado"></div>
+<button class="back" onclick="volver()">← Volver</button>
+</div>
+</div>
+
+<div id="p34" class="pantalla oculto">
+<div class="topbar"><h2>⚜ 3.4 Estacionamiento</h2></div>
+<div class="panelBox">
+<input id="h34" placeholder="Horas">
+<button onclick="p34()">Calcular</button>
+<div id="r34" class="resultado"></div>
+<button class="back" onclick="volver()">← Volver</button>
+</div>
+</div>
+
+<div id="p35" class="pantalla oculto">
+<div class="topbar"><h2>⚜ 3.5 Menor edad</h2></div>
+<div class="panelBox">
+<input id="n1" placeholder="Nombre 1">
+<input id="e1" placeholder="Edad 1">
+<input id="n2" placeholder="Nombre 2">
+<input id="e2" placeholder="Edad 2">
+<input id="n3" placeholder="Nombre 3">
+<input id="e3" placeholder="Edad 3">
+<button onclick="p35()">Calcular</button>
+<div id="r35" class="resultado"></div>
+<button class="back" onclick="volver()">← Volver</button>
+</div>
+</div>
+
+<div id="p36" class="pantalla oculto">
+<div class="topbar"><h2>⚜ 3.6 Descuento</h2></div>
+<div class="panelBox">
+<input id="precio36" placeholder="Precio">
+<button onclick="p36()">Calcular</button>
+<div id="r36" class="resultado"></div>
+<button class="back" onclick="volver()">← Volver</button>
+</div>
+</div>
+
+<div id="p37" class="pantalla oculto">
+<div class="topbar"><h2>⚜ 3.7 Becas</h2></div>
+<div class="panelBox">
+<input id="edad37" placeholder="Edad">
+<input id="prom37" placeholder="Promedio">
+<button onclick="p37()">Calcular</button>
+<div id="r37" class="resultado"></div>
+<button class="back" onclick="volver()">← Volver</button>
+</div>
+</div>
+
+<div id="p38" class="pantalla oculto">
+<div class="topbar"><h2>⚜ 3.8 Bono</h2></div>
+<div class="panelBox">
+<input id="sueldo38" placeholder="Sueldo">
+<input id="ant38" placeholder="Antigüedad">
+<button onclick="p38()">Calcular</button>
+<div id="r38" class="resultado"></div>
+<button class="back" onclick="volver()">← Volver</button>
+</div>
+</div>
+
+<div id="p39" class="pantalla oculto">
+<div class="topbar"><h2>⚜ 3.9 Seguro</h2></div>
+<div class="panelBox">
+<input id="base39" placeholder="Costo base">
+<input id="edad39" placeholder="Edad">
+<button onclick="p39()">Calcular</button>
+<div id="r39" class="resultado"></div>
+<button class="back" onclick="volver()">← Volver</button>
+</div>
+</div>
+
+<div id="p310" class="pantalla oculto">
+<div class="topbar"><h2>⚜ 3.10 Vacaciones</h2></div>
+<div class="panelBox">
+<input id="destino310" placeholder="Destino (cancun/acapulco/pv)">
+<button onclick="p310()">Calcular</button>
+<div id="r310" class="resultado"></div>
+<button class="back" onclick="volver()">← Volver</button>
+</div>
+</div>
+
+<div id="p311" class="pantalla oculto">
+<div class="topbar"><h2>⚜ 3.11 Bono tienda</h2></div>
+<div class="panelBox">
+<input id="ant311" placeholder="Años">
+<button onclick="p311()">Calcular</button>
+<div id="r311" class="resultado"></div>
+<button class="back" onclick="volver()">← Volver</button>
+</div>
+</div>
+
+<div id="p312" class="pantalla oculto">
+<div class="topbar"><h2>⚜ 3.12 Sueldo extra</h2></div>
+<div class="panelBox">
+<input id="h312" placeholder="Horas">
+<button onclick="p312()">Calcular</button>
+<div id="r312" class="resultado"></div>
+<button class="back" onclick="volver()">← Volver</button>
+</div>
+</div>
+
+<div id="p313" class="pantalla oculto">
+<div class="topbar"><h2>⚜ 3.13 Viaje alumnos</h2></div>
+<div class="panelBox">
+<input id="alumnos313" placeholder="Alumnos">
+<button onclick="p313()">Calcular</button>
+<div id="r313" class="resultado"></div>
+<button class="back" onclick="volver()">← Volver</button>
+</div>
+</div>
+
+<script src="functions.js"></script>
+</body>
+</html>

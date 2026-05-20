@@ -1,0 +1,96 @@
+body{
+    font-family: Arial;
+    background:black;
+    color:white;
+    margin:0;
+    text-align:center;
+}
+
+h1{color:gold;}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:18px;
+    padding:30px;
+}
+
+.card{
+    background:#111;
+    border:1px solid gold;
+    padding:25px;
+    border-radius:15px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.card:hover{
+    background:gold;
+    color:black;
+    transform:scale(1.05);
+}
+
+.pantalla{padding:20px;}
+
+.oculto{display:none;}
+
+/* TOP */
+.topbar{
+    background:#0a0a0a;
+    border-bottom:1px solid gold;
+    padding:15px;
+    margin-bottom:20px;
+}
+
+.topbar h2{color:gold;margin:0;}
+
+/* PANEL PRO */
+.panelBox{
+    max-width:500px;
+    margin:auto;
+    background:#111;
+    border:1px solid gold;
+    border-radius:18px;
+    padding:25px;
+}
+
+/* INPUTS */
+input{
+    display:block;
+    margin:10px auto;
+    padding:12px;
+    width:85%;
+    border-radius:8px;
+    border:none;
+    background:#000;
+    color:white;
+    border:1px solid #333;
+}
+
+/* BOTONES */
+button{
+    display:block;
+    margin:10px auto;
+    padding:12px;
+    width:60%;
+    background:gold;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.back{
+    background:#222;
+    color:gold;
+    border:1px solid gold;
+}
+
+/* RESULTADO */
+.resultado{
+    margin-top:15px;
+    padding:12px;
+    border:1px solid gold;
+    border-radius:10px;
+    color:gold;
+}
